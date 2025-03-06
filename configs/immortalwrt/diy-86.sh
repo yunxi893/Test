@@ -26,7 +26,7 @@ sed -i 's/filter_aaaa	1/filter_aaaa	0/g' package/network/services/dnsmasq/files/
 #rm -rf feeds/packages/utils/tini
 #rm -rf feeds/luci/protocols/luci-proto-ppp
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang -b 1.23 feeds/packages/lang/golang
 
 # Timezone
 #sed -i "s/'UTC'/'CST-8'\n   set system.@system[-1].zonename='Asia\/Shanghai'/g" package/base-files/files/bin/config_generate
